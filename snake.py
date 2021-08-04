@@ -26,7 +26,6 @@ class apple(object):
         while ( Snake.checkIfContain(self.x, self.y)):
             self.x, self.y = random.randint(0, 33) * 15 + 5, random.randint(0, 33) * 15 + 185
         self.alive = True    
-        print(self.x, self.y)
         
     def drawApple(self, win):
         pygame.draw.rect(win, RED, (self.x, self.y, SIZE, SIZE) )
